@@ -1,8 +1,12 @@
 
-localStorage.clear();
 const no_button = document.querySelector("#no")
 
 let no_count = Number(localStorage.getItem("noCount")) || 0;
+
+//reset no_count to 0 after it reaches 3
+if (no_count == 3) {
+  no_count = 0;
+}
 
 
 no_button.addEventListener("click", () => {
