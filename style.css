@@ -54,7 +54,7 @@ button {
   width: 170px;
   height: 170px;
   background-color: #feeaed;
-  background-image: url("imgs/Soft-Pink-Heart-Symbol-PNG.png");
+  background-image: url("imgs/heart.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@ button {
   width: 160px;
   height: 150px;
   background-color: #feeaed;
-  background-image: url("imgs/Soft-Pink-Heart-Symbol-PNG.png");
+  background-image: url("imgs/heart.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
