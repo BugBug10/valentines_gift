@@ -1,0 +1,115 @@
+html {
+  font-family: "Pacifico", "Crafty Girls", cursive, Arial;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #feeaed
+}
+
+/* .crafty-girls-regular {
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.main_container {
+  /* border: 5px solid rgb(255, 174, 240); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+header {
+  /* border: 5px solid rgb(245, 138, 49); */
+  font-size: 50px;
+  color: rgb(192, 10, 10);
+  font-family: "Pacifico", "Crafty Girls", cursive, Arial;
+}
+
+section {
+  /* border: 5px solid black; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 5px 5px 5px;
+}
+
+button {
+  color: white;
+  font-family: "Pacifico", "Crafty Girls", cursive, Arial;
+  font-size: 46px;
+  font-weight: bold;
+  /* background-color: rgb(255, 145, 164); */
+  padding: 10px 20px;
+
+  /* Space between text and button edges */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Changes cursor to a hand on hover */
+  flex: 1;
+}
+
+.heart_button {
+  width: 170px;
+  height: 170px;
+  background-color: #feeaed;
+  background-image: url("imgs/Soft-Pink-Heart-Symbol-PNG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 10px black;
+
+}
+
+.back_button {
+  width: 160px;
+  height: 150px;
+  background-color: #feeaed;
+  background-image: url("imgs/Soft-Pink-Heart-Symbol-PNG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 10px black;
+  flex-direction: row;
+  font-size: 30px;
+
+}
+
+.heart_button:first-child {
+  color: white;
+
+}
+
+
+.falling-kiss {
+  position: fixed;
+  top: -50px;
+  pointer-events: none;
+  z-index: 9999;
+
+  animation-name: fall;
+  animation-timing-function: linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0.9;
+  }
+}
+
+.no2_main_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
