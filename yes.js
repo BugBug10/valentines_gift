@@ -2,7 +2,7 @@
 function kiss_rain() {
   const kiss = document.createElement("img");
 
-  kiss.src = "imgs/Soft-Pink-Heart-Symbol-PNG.PNG"
+  kiss.src = "imgs/heart.png"
   kiss.classList.add("falling-kiss");
 
   kiss.style.left = Math.random() * 100 + "vw";
@@ -24,5 +24,10 @@ function kiss_rain() {
 window.onload = () => {
   for (let i = 0; i < 40; i++) {
     setTimeout(kiss_rain, i * 100);
+  }
+  if (no_count == 3) {
+    let remark = document.createElement("p");
+    remark.innerText = "Too bad! You will be my valentine.";
+    document.appendChild(remark);
   }
 };
